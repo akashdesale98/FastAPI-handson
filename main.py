@@ -4,7 +4,7 @@ from fastapi import FastAPI
 from typing import Optional
 from pydantic import BaseModel
 from starlette.routing import Host 
-import uvicorn
+# import uvicorn
 
 app = FastAPI()
 
@@ -36,5 +36,5 @@ class Blog(BaseModel):
 def createBlog(blog: Blog):
     return {'data' : f'Blog with the title {blog.title} has been created'}
 
-if __name__ == "__main__":
-    uvicorn.run(app, host="127.0.0.1", port=9000)
+# if __name__ == "__main__":
+#     uvicorn.run(app, host="127.0.0.1", port=9000)

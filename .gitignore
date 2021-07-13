@@ -1,6 +1,8 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
 fastapi-env/
+# blog/__pycache__/
+blog-env/
 *.py[cod]
 *$py.class
 
